@@ -1,0 +1,58 @@
+ip_forward: true
+network_compression_threshold: 256
+stats: 5885a0fd-41ff-4eb8-8f2b-75cc6cea8f3c
+groups:
+  wnuke:
+  - admin
+  md_5:
+  - admin
+servers:
+  Hub:
+    motd: '&f&l<< &aWelcome &aTo &c&l&k!!!!&r&6&lBlaze MC&c&l&k!!!!&r &f&l>>'
+    address: localhost:25566
+    restricted: false
+  Survival:
+    motd: '&f&l<< &aWelcome &aTo &c&l&k!!!!&r&6&lBlaze MC&c&l&k!!!!&r &f&l>>'
+    address: localhost:25568
+    restricted: false
+  BedWars:
+    motd: '&f&l<< &aWelcome &aTo &c&l&k!!!!&r&6&lBlaze MC&c&l&k!!!!&r &f&l>>'
+    address: localhost:25567
+    restricted: false
+  Bending:
+    motd: '&f&l<< &aWelcome &aTo &c&l&k!!!!&r&6&lBlaze MC&c&l&k!!!!&r &f&l>>'
+    address: localhost:25576
+    restricted: false
+timeout: 30000
+player_limit: -1
+listeners:
+- query_port: 25565
+  motd: '&f&l<< &aWelcome &aTo &c&l&k!!!!&r&6&lBlaze MC&c&l&k!!!!&r &f&l>>'
+  priorities:
+  - hub
+  bind_local_address: true
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  host: 0.0.0.0:25565
+  forced_hosts:
+    pvp.md-5.net: pvp
+  max_players: 600
+  tab_size: 60
+  ping_passthrough: false
+  force_default_server: true
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeetablistplus.admin
+  - bungeetablistplus.hide
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+online_mode: true
+log_commands: true
+disabled_commands:
+- disabledcommandhere
+connection_throttle: 4000

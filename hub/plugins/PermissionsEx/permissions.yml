@@ -1,0 +1,361 @@
+groups:
+  default:
+    options:
+      default: 'true'
+      prefix: '&7'
+      suffix: '&7'
+    permissions:
+    - HiveJumpPads.use.JumpPad
+    - essentials.build.*
+    - essentials.build
+    - -bukkit.command.versions
+    - -bukkit.command.version
+    - -bukkit.command.pl
+    - -bukkit.command.plugins
+    - customjoinitems.serverselector
+    - lo.command.open
+    - myitems.use
+    - myitems.use.*
+    - myitems.get.*
+    - myitems.get
+    - firstjoinplus.notify
+    - chatex.allowchat
+    - chatex
+    - sg.arena.spectate
+    - sg.arena.vote
+    - sg.lobby.join
+    - sg.arenajoin
+    - sg.arenajoin.*
+    - sg.arena.join.*
+    - sg.arena.join
+    - sg.join
+    - bw.play
+    - plots.kick
+    - plots.list
+    - plots.remove.*
+    - plots.remove
+    - plots.deny.*
+    - plots.deny
+    - plots.trust.*
+    - plots.trust
+    - plots.clear.*
+    - plots.clear
+    - plots.set.*
+    - plots.set
+    - plots.visit.*
+    - plots.visit
+    - plots.claim.*
+    - plots.claim
+    - plots.permpack.basicinbox
+    - plots.permpack.basicflags
+    - plots.permpack.basic
+    - plots.plot.1
+    - plots.use
+    - multiworld.creativemode
+    - warpportals.enter
+    - modifyworld.*
+    - essentials.help
+    - essentials.rules
+    - essentials.motd
+    - essentials.afk
+    - essentials.back.ondeath
+    - essentials.depth
+    - essentials.delhome
+    - essentials.help
+    - essentials.home
+    - essentials.kit
+    - essentials.kit.Starter
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.ping
+    - essentials.r
+    - essentials.rules
+    - essentials.seen
+    - essentials.sethome
+    - essentials.signs.use.disposal
+    - essentials.spawn
+    - essentials.suicide
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.recipe
+  VIP:
+    options:
+      default: false
+      prefix: '&a&lVIP'
+    inheritance:
+    - default
+    build: true
+    permissions:
+    - gadgetsmenu.cosmetics.*
+    - chatex.allowchat
+  Builder:
+    options:
+      prefix: '&7&k!!!&r&b[&rBuilder&b]&7&k!!!&r '
+    inheritance:
+    - default
+    permissions:
+    - permissions.tp
+    - permissions.nick
+    - permissions.nickname
+    - permissions.gma
+    - permissions.gmsp
+    - permissions.gms
+    - permissions.gs
+    - permissions.gamemode
+    - permissions.gmc
+    - essentials.rules
+    - sg.arena.forcestart
+    - v
+    - worldedit.replacenear
+    - worldedit.history.undo
+    - worldedit.history.redo
+    - worldedit.selection
+    - worldedit.selection.*
+    - worldedit.selection.pos
+    - worldedit.region.set
+    - worldedit.wand.*
+    - worldedit.wand
+    - worldedit.generation.*
+    - worldedit.generation
+    - chatex.allowchat
+    - essentials.gamemode.*
+    - essentials.gamemode
+    - essentials.fly
+    - essentials.give
+  Co-Owner:
+    options:
+      prefix: '&a&l&kiiii&b&l[&e&lCo-Owner&b&l]&a&l&kiiii '
+    inheritance:
+    - Builder
+    - Mod
+    - VIP
+    - default
+    permissions:
+    - -icu.exempt
+    - -essentials.sudo.exempt
+    - '*'
+  Developer:
+    options:
+      prefix: '&7&k!!!&r&b&l[&a&lDeveloper&b&l]&7&k!!!&r '
+  TrialModerator:
+    permissions:
+    - essentials.hub
+    - essentials.warp
+    - essentials.help
+    - essentials.tp
+    - essentials.gamemode
+    - essentials.gmc
+    - essentials.fly
+    options:
+      prefix: '&7&k!!!&r&b[&f&lTrial-Moderator&b]&7&k!!!&r '
+  Owner:
+    options:
+      prefix: '&c&l&k!!!!&r&7&l[&6&lOwner&7&l]&c&l&k!!!!&r '
+    permissions:
+    - '*.*.*.*.*.*.*.*.*'
+    - '*.*.*.*.*.*.*.*'
+    - '*.*.*.*.*.*.*'
+    - '*.*.*.*.*.*'
+    - '*.*.*.*.*'
+    - '*.*.*.*'
+    - '*.*.*'
+    - '*.*'
+    - '*'
+  Manager:
+    options:
+      prefix: '&8&l[&c&lManager&8&l]'
+  Admin:
+    permissions:
+    - essentials.rules
+    - essentials.help
+    - essentials.mute
+    - essentials.tempban
+    - essentials.ban
+    - essentials.tp
+    - essentials.gamemode
+    - essentials.fly
+    options:
+      prefix: '&4&lADMIN'
+  Helper:
+    options:
+      prefix: '&6&lHELPER'
+    permissions:
+    - essentials.rules
+    - essentials.help
+    - essentials.tpadeny
+    - essentials.tpayes
+    - essentials.tpaccept
+    - essentials.hub
+    - essentials.tpa
+    - essentials.fly
+  Moderator:
+    options:
+      prefix: '&7&k!!!&r&b[&f&lModerator&b]&7&k!!!&r '
+    inheritance:
+    - default
+    permissions:
+    - essentials.rules
+    - essentials.help
+    - essentials.mute
+    - essentials.tempban
+    - essentials.gamemode
+    - essentials.hub
+    - essentials.tpadeny
+    - essentials.tpaaccept
+    - essentials.tpayes
+    - essentials.tpa
+    - essentials.toa
+    - essentials.tp
+    - essentials.fly
+schema-version: 1
+users:
+  d8deaa9b-cea5-3736-a01f-f915199f8e62:
+    options:
+      name: Clokez
+    group:
+    - Co-Owner
+  93451796-7166-4c0a-822a-54baa00907d7:
+    options:
+      name: stormclaw18
+    group:
+    - Co-Owner
+  9ecb1e0e-6377-4695-85f6-aa01edeb7653:
+    options:
+      prefix: '&3[&1OwnerOfXtro&3]'
+      name: zay_med
+    permissions:
+    - -essentials.sudo.exempt
+    - -icu.exempt
+  381fdd85-8abd-4b63-bb48-a4daefc13f82:
+    options:
+      name: wnuke
+    permissions:
+    - bungeetablistplus.admin
+    - '*.*.*.*.*.*.*.*.*'
+    - '*.*.*.*.*.*.*.*'
+    - '*.*.*.*.*.*.*'
+    - '*.*.*.*.*.*'
+    - '*.*.*.*.*'
+    - '*.*.*.*'
+    - '*.*.*'
+    - '*.*'
+    - '*'
+    group:
+    - Owner
+  07725e69-2536-48e4-9718-706cce0cd071:
+    group:
+    - default
+    permissions:
+    - -icu.*
+    - -essentials.sudo.*
+    - -essentials.sudo
+    options:
+      name: xtratnt
+  1491c8ff-8058-42c1-904a-ee830f0bddfb:
+    group:
+    - default
+    options:
+      prefix: ''
+      name: MYNR
+  68b67a62-36e2-4e8e-b41d-ed8c15afdb3e:
+    group:
+    - VIP
+    options:
+      name: zmynz
+  e1654394-f47a-445a-8288-17900099cea9:
+    group:
+    - VIP
+    - group
+    - Co-Owner
+    options:
+      name: Dumay
+      prefix: '&9&lCO-OWNER&7&l-&8&l[&a&lVIP&8&l]'
+    worlds:
+      '&8&l[&a&lVIP&8&l]':
+        options:
+          prefix: '&9&lCO-OWNER'
+  a9880158-ae8f-4434-bb20-de34c89c9e9e:
+    group:
+    - Builder
+    options:
+      name: xXJustGodXx
+      prefix: '&7&k!!!&r&b[&rHead-Builder&b]&7&k!!!&r '
+  59b99366-e375-4e09-a556-70b407b5527a:
+    group:
+    - Moderator
+    options:
+      name: maccasToybonnie
+      prefix: ''
+    permissions:
+    - essentials.gm
+    - essentials.gma
+    - essentials.gmsp
+    - essentials.gms
+    - essentials.gmc
+    - essentials.gamemode
+    - essentials.hub
+    - essentials.help
+    - essentials.invsee
+    - essentials.openinv
+    - essentials.mute
+    - essentials.tempban
+    - essentials.ban
+    - essentials.tpadeny
+    - essentials.tpano
+    - essentials.tpaaccept
+    - essentials.tpayes
+    - essentials.tpa
+    - essentials.fly
+    - essentials.tpayes\
+    - essentials.tp
+  1046ac72-2a2d-4810-99e8-4ae971005534:
+    group:
+    - Moderator
+    options:
+      name: O2O2
+      prefix: ''
+    permissions:
+    - essentials.mute
+    - essentials.ban
+    - essentials.ban\
+    - essentials.tempban
+    - essentials.openinv
+    - essentials.hub
+    - essentials.help
+    - essentials.tpano
+    - essentials.tpadeny
+    - essentials.tpayes
+    - essentials.tpaues
+    - essentials.tpaccept
+    - essentials.tpa
+    - essentials.tp
+    - essentials.fly
+  c1576906-9a14-4f99-a27f-53fd97051732:
+    group:
+    - Builder
+    options:
+      name: MrMinecraft1325
+  148d8912-97d7-41b2-879c-166f9c8e362e:
+    group:
+    - Builder
+    options:
+      name: Ratles
+    permissions:
+    - -essentials.sudo.*
+    - essentials.sudo.exempt
+  d33eaf0c-4ade-4832-8bf6-8b8090eac6c3:
+    group:
+    - VIP
+    options:
+      name: dBdB
+  fd0b8b02-8baf-4852-a60e-9c3f801a845e:
+    options:
+      name: xXJustProXx
+    permissions:
+    - worldedit.*

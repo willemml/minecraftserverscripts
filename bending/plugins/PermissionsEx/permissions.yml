@@ -1,0 +1,26 @@
+groups:
+  default:
+    options:
+      default: true
+    permissions:
+    - modifyworld.*
+  Owner:
+    options:
+      prefix: '&c&l&k!!!!&r&7&l[&6&lOwner&7&l]&c&l&k!!!!&r '
+schema-version: 1
+users:
+  381fdd85-8abd-4b63-bb48-a4daefc13f82:
+    permissions:
+    - '*'
+    options:
+      name: wnuke
+      prefix: ''
+    group:
+    - default
+  07725e69-2536-48e4-9718-706cce0cd071:
+    permissions:
+    - '*'
+    - -bending.water.bloodbending
+    - -bending.ability.bloodbending
+    options:
+      name: xtratnt
